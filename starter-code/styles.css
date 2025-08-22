@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Headings & Buttons */
+h1, h2, h3, h4, h5, button, .explore-btn a {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+}
+
+/* Subheadings, nav links, tabs */
+nav a, .destination-tabs button, .crew-selector button {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* Body text */
+body, p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+body {
+    
+    color: white;
+    background: url('assets/home/background-home-desktop.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+nav{
+    padding: 2rem 6rem;
+    margin-top: 23px;
+    width: 700px;
+     backdrop-filter: blur(10px);
+     background-color: #ffffff33;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+header a.active {
+    border-bottom: 2px solid white;
+    position: relative;
+
+}
+    
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.text-section {
+    max-width: 400px;
+    margin-left: 73px;
+}
+
+.text-section h5 {
+    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.text-section h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.text-section p {
+    line-height: 1.6;
+    font-size: .95rem;
+}
+.explore-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-top:  123px;
+    margin-right:  93px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease;
+}
+.explore-btn a {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 2rem 3rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+    .destination-stats {
+        flex-direction: row; /* Stats side by side on bigger screens */
+    }
+/* Destination Page */
+body.destination-body {
+    background: url('assets/destination/background-destination-desktop.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.destination-layout {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.destination-tabs {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.dest-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+}
+.destination-info{
+    width: 400px;
+}
+.destination-info h2{
+    font-size: 70px;
+}
+.destination-info p{
+    margin-bottom: 33px;
+    line-height: 1.5;
+}
+.dest-btn.active {
+    border-color: white;
+}
+
+.destination-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 9px;
+}
+.destination-main h1{
+     margin-top: 43px;
+     margin-bottom: 53px;
+     margin-left: 80px;
+}
+.destination-main h1 span{
+    color: #ffffff33;
+}
+.destination-stats h3 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+.planet {
+    width: 250px; /* reduce this to make it smaller */
+    max-width: 100%;
+}
+.destination-image{
+    margin-left: 220px;
+    margin-right: 70px;
+}
+.destination-image img {
+    width: 290px; /* adjust as needed */
+}
+.destination-stats {
+    border-top: 1px solid wheat;
+}
+.destination-stats {
+    border-top: 1px solid transparent;
+}
+.border{
+    border: 1px solid #ffffff33;
+    margin-bottom: 4px;
+    
+}
+/* Crew Page */
+body.crew-body {
+    background: url('assets/crew/background-crew-desktop.jpg') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+}
+
+.crew-main {
+    padding: 2rem;
+    margin-left: 67px;
+    width: 1000px;
+    
+    
+}
+.crew-main h1 span{
+    color: #ffffff33;
+}
+.crew-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.crew-info h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.crew-info h3 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+}
+.crew-info {
+    width: 500px;
+    
+}
+.crew-info p{
+    line-height: 1.5;
+    font-size: 17px;
+}
+.crew-selector {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.crew-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+}
+
+.crew-dot.active {
+    opacity: 1;
+}
+
+.crew-image img {
+    max-width: 350px;
+}
+/* Technology Page */
+body.technology-body {
+    background: url('assets/technology/background-technology-desktop.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.technology-layout {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+    
+}
+.technology-main{
+    margin-left: 170px;
+}
+.technology-main h1 span{
+    color: #ffffff33;
+}
+.technology-info p{
+    line-height: 1.5;
+    
+}
+.technology-image{
+    margin-left: 300px;
+}
+.technology-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tech-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.tech-btn.active {
+    background: white;
+    color: black;
+}
+
+.technology-info h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.technology-info h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+.technology-image img {
+    max-width: 400px;
+}
+/* ======= MOBILE/TABLET NAV (non-breaking) ======= */
+
+/* Hide the toggle by default (desktop) */
+.nav-toggle { display: none; }
+
+/* Toggle icon styling */
+.nav-toggle .line{
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  margin: 5px 0;
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+/* Tablet & down */
+@media (max-width: 768px){
+  header{ position: relative; }
+
+  /* Show hamburger */
+  .nav-toggle{
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-right: 1rem;
+    z-index: 1001;
+  }
+  body {
+      background: url('assets/home/background-home-mobile.jpg') no-repeat center center/cover;
+  }
+  .home{
+    display: block;
+  }
+  .destination-layout{
+    flex-direction: column;
+    margin-left: 43px;
+  }
+  .home .explore-btn{
+    margin-left: 106px;
+  }
+nav{
+    background: none;
+    backdrop-filter: none;
+}
+  /* Override your desktop nav for small screens */
+  header ul{
+    /* hidden by default on small screens */
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: min(80vw, 320px);
+    padding: 1.25rem;
+    margin: 0;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-top-left-radius: 8px;
+    z-index: 1000;
+  }
+header ul li{
+margin-left: 96px;
+}
+.destination-image{
+    
+    margin-right: 220px;}
+
+
+.crew-main{
+    max-width: 500px;
+}
+
+.crew-layout {
+    flex-direction: column; /* stack vertically */
+    
+  }
+
+.crew-image {
+    order: -1;
+    margin-top: 40px;
+    margin-right: 100px;
+  }
+.crew-info p{
+    font-size: 17px;
+    padding-right: 26px;
+}
+  /* Show when toggled */
+  header ul.show{ 
+    display: flex;
+    order: -2;
+ }
+  
+  .technology-layout{
+    flex-direction: column;
+    
+  }
+ .technology-selector {
+    
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 80px;
+    
+}
+  .technology-body{
+    max-width: 500px;
+  }
+  .technology-image{
+    margin-top: 60px;
+    margin-right: 400px;
+    order: -1;
+    
+}
+}
+
+/* Fancy X animation for the icon when open */
+.nav-toggle.is-open .line:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+.nav-toggle.is-open .line:nth-child(2){ opacity: 0; }
+.nav-toggle.is-open .line:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+
+
+/* Tablet view: hide the numbers in nav but keep menu visible */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    header  ul {
+        display: flex !important; /* ensure visible */
+        flex-direction: row;
+        position: static;
+        background: none;
+        backdrop-filter: none;
+        padding: 0;
+    }
+    header ul li a span {
+        display: none; /* hide 00, 01, etc. */
+    }
+    .nav-toggle {
+        display: none; /* hide hamburger on tablet */
+    }
+    body{
+    background-image: url('assets/home/background-home-tablet.jpg');
+}
+ .home{
+    flex-direction: column;
+  }
+   .destination-layout{
+    flex-direction: column;
+    margin-left: 43px;
+  }
+.destination-image{
+    
+    margin-right: 220px;}
+
+
+.crew-main{
+    max-width: 500px;
+}
+
+.crew-layout {
+    flex-direction: column; /* stack vertically */
+    
+  }
+
+.crew-image {
+    
+    margin-top: 40px;
+    margin-right: 100px;
+  }
+.crew-info p{
+    font-size: 17px;
+    padding-right: 26px;
+}
+  /* Show when toggled */
+  header ul.show{ 
+    display: flex;
+    
+ }
+  
+  .technology-layout{
+    flex-direction: column;
+    
+  }
+ .technology-selector {
+    
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 80px;
+    
+}
+  .technology-image{
+    margin-top: 60px;
+    margin-right: 400px;
+    order: -1;
+    
+    
+}
+.technology-main .page-title{
+    margin-bottom: 70px;
+}
+}
+
+
+/* Desktop: show numbers again */
+@media (min-width: 1025px) {
+    header ul li a span {
+        display: inline;
+    }
+}

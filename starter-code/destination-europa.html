@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination | Space Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="destination-body">
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="assets/shared/logo.svg" alt="Logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">00 Home</a></li>
+                <li><a href="destination-europa.html" class="active">01 Destination</a></li>
+                <li><a href="crew-commander.html">02 Crew</a></li>
+                <li><a href="technology-capsule.html">03 Technology</a></li>
+            </ul>
+        </nav>
+         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                          <span class="line"></span>
+                          <span class="line"></span>
+                          <span class="line"></span>
+                 </button>
+    </header>
+
+    <!-- Main -->
+    <main class="destination-main">
+      
+        <h1 class="page-title"><span>01</span> Pick your destination</h1>
+
+        <div class="destination-layout">
+            <!-- Destination Image -->
+            <div class="destination-image">
+                <img id="planet-img" src="assets/destination/image-moon.png" alt="Moon">
+            </div>
+
+            <!-- Destination Info -->
+            <div class="destination-info">
+                <!-- Tabs -->
+                <div class="destination-tabs">
+                    <button class="dest-btn active" data-planet="moon">Moon</button>
+                    <button class="dest-btn" data-planet="mars">Mars</button>
+                    <button class="dest-btn" data-planet="europa">Europa</button>
+                    <button class="dest-btn" data-planet="titan">Titan</button>
+                </div>
+
+                <!-- Planet Content -->
+                <h2 id="planet-name">MOON</h2>
+                <p id="planet-description">
+                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective 
+                    and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 
+                    landing sites.
+                </p>
+                   <div class="border"></div>
+                <div class="destination-stats">
+                  
+                    <div>
+                        <h3>Avg. Distance</h3>
+                        <p id="planet-distance">384,400 KM</p>
+                    </div>
+                    <div>
+                        <h3>Est. Travel Time</h3>
+                        <p id="planet-time">3 DAYS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
